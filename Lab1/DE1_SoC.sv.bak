@@ -1,0 +1,24 @@
+module DE1_SoC (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
+
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	output logic [9:0] LEDR;
+	input logic [3:0] KEY;
+	input logic [9:0] SW;
+	input logic CLOCK_50;
+	
+	//logic reset = (SW[9]);
+	
+	logic [1:0] out;
+	logic [4:0] counter;
+	
+	FSM fsm (.clk(CLOCK_50), .reset(SW[9]), .in(SW[1:0]), .out);//({enter, exit}));
+	
+	up_counter count (.clk(CLOCK_50), .reset(SW[9]), .out, .counter);
+	
+	display disp (.clk(CLOCK_50), .reset(SW[9]), .z(counter), .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5);
+	
+	always_comb begin
+		LEDR[1:0] = out[1:0];
+	end
+	
+endmodule

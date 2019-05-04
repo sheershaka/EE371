@@ -1,0 +1,236 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Padia/EE371 Labs/Lab4/Lab4Task2/simulation/modelsim
+vbinarySearch
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1550711009
+!i10b 1
+!s100 j[??^@z[>9V<cCa[TSNBg2
+I]`SM2BOihHS5FMT;DLJc?0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 binarySearch_sv_unit
+S1
+R0
+Z5 w1550620882
+Z6 8D:/Padia/EE371 Labs/Lab4/Lab4Task2/binarySearch.sv
+Z7 FD:/Padia/EE371 Labs/Lab4/Lab4Task2/binarySearch.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1550711009.000000
+Z10 !s107 D:/Padia/EE371 Labs/Lab4/Lab4Task2/binarySearch.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Padia/EE371 Labs/Lab4/Lab4Task2|D:/Padia/EE371 Labs/Lab4/Lab4Task2/binarySearch.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+D:/Padia/EE371 Labs/Lab4/Lab4Task2}
+Z14 tCvgOpt 0
+nbinary@search
+vbinarySearch_tb
+R1
+R2
+!i10b 1
+!s100 VW@amDeJfT@18bC:4W;W70
+I?G`M_a6UVKN72=F[K6]EZ1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 66
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+nbinary@search_tb
+vclock_divider
+R1
+R2
+!i10b 1
+!s100 d@B;n587=VfoCQmHXio_b3
+IaIRiQNHGeC`za[[^d=Fji1
+R3
+Z15 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z16 w1550710888
+Z17 8D:/Padia/EE371 Labs/Lab4/Lab4Task2/DE1_SoC.sv
+Z18 FD:/Padia/EE371 Labs/Lab4/Lab4Task2/DE1_SoC.sv
+L0 33
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 D:/Padia/EE371 Labs/Lab4/Lab4Task2/DE1_SoC.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Padia/EE371 Labs/Lab4/Lab4Task2|D:/Padia/EE371 Labs/Lab4/Lab4Task2/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 BEQaEf08:=41i5KRL2J]@1
+ITnJ9TQg=DbVHhEhUoiOmD0
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 4I700_d<dAD:4lPg`6X1z1
+IoWBmiim@f0M:nH:AzWZ1`3
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 74
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vram32x8
+!s110 1550711008
+!i10b 1
+!s100 V_L^j;Bjj`o9cCl^U6mI91
+I_W>n5i^fQ34O`:U0aJkP23
+R3
+R0
+w1550709328
+8D:/Padia/EE371 Labs/Lab4/Lab4Task2/ram32x8.v
+FD:/Padia/EE371 Labs/Lab4/Lab4Task2/ram32x8.v
+L0 40
+R8
+r1
+!s85 0
+31
+!s108 1550711008.000000
+!s107 D:/Padia/EE371 Labs/Lab4/Lab4Task2/ram32x8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Padia/EE371 Labs/Lab4/Lab4Task2|D:/Padia/EE371 Labs/Lab4/Lab4Task2/ram32x8.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+D:/Padia/EE371 Labs/Lab4/Lab4Task2}
+R14
+vram_testbench
+R1
+R2
+!i10b 1
+!s100 _U]g;[2bd2Xn5937>4ON]3
+IWY6>URcMn80f4g2PI0HhO2
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 44
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vseg7
+R1
+R2
+!i10b 1
+!s100 Z86LFzLjbBOnP8?:04C:a2
+IeOWMlQ;U?QG<_dP:Mb5YV0
+R3
+Z21 !s105 seg7_sv_unit
+S1
+R0
+Z22 w1548543708
+Z23 8D:/Padia/EE371 Labs/Lab4/Lab4Task2/seg7.sv
+Z24 FD:/Padia/EE371 Labs/Lab4/Lab4Task2/seg7.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 D:/Padia/EE371 Labs/Lab4/Lab4Task2/seg7.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Padia/EE371 Labs/Lab4/Lab4Task2|D:/Padia/EE371 Labs/Lab4/Lab4Task2/seg7.sv|
+!i113 1
+R12
+R13
+R14
+vseg7_testbench
+R1
+R2
+!i10b 1
+!s100 P:eh6904C`Nc@4K5cGlDU1
+I:R>ZgmUZIkDIca8e47[kb1
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 129
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14

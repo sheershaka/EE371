@@ -1,0 +1,6 @@
+
+State Machine - |DE1_SoC|line_drawer:lineswhite|state
+Name state~6 state~5 
+state.00 0 0 
+state.01 0 1 
+state.10 1 0 

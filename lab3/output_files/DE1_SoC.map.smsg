@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at DE1_SoC.sv(56): always construct contains both blocking and non-blocking assignments File: D:/Padia/EE371 Labs/lab3/DE1_SoC.sv Line: 56

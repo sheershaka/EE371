@@ -1,0 +1,358 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Student User/Downloads/DE1-SoCTask3/simulation/modelsim
+vAltera_UP_Audio_Bit_Counter
+Z1 !s110 1551493922
+!i10b 1
+!s100 J2Tb5SPZN>>^6S@MM9o:c1
+IYNzUk7^eX69Vho5aHoSR21
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1551055595
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_bit_counter.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_bit_counter.v
+Z4 L0 49
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1551493922.000000
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_bit_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_bit_counter.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3}
+Z9 tCvgOpt 0
+n@altera_@u@p_@audio_@bit_@counter
+vAltera_UP_Audio_In_Deserializer
+Z10 !s110 1551493921
+!i10b 1
+!s100 MnK8@IQLcda;1gGBW7@Tz0
+IUohdkl8_O2N6FK`^2iID12
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_in_deserializer.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_in_deserializer.v
+Z11 L0 47
+R5
+r1
+!s85 0
+31
+Z12 !s108 1551493921.000000
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_in_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_in_deserializer.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@audio_@in_@deserializer
+vAltera_UP_Audio_Out_Serializer
+R1
+!i10b 1
+!s100 BllhdjOFFm6Rj]o@Xid882
+IS_H@X6U15:1Zfz2][TCNQ3
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_out_serializer.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_out_serializer.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_out_serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_audio_out_serializer.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@audio_@out_@serializer
+vAltera_UP_Clock_Edge
+R10
+!i10b 1
+!s100 XaX6^HY04T3X?D32?HdN>2
+IMDK5DAC5m7VWRA^;o1ZnW1
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_clock_edge.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_clock_edge.v
+Z13 L0 48
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_clock_edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_clock_edge.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@clock_@edge
+vAltera_UP_I2C
+Z14 !s110 1551493919
+!i10b 1
+!s100 JU94J3RToJ0DChmlIi^B43
+IFS]SON=6RbSKGk637]0lA0
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c.v
+R13
+R5
+r1
+!s85 0
+31
+Z15 !s108 1551493919.000000
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@i2@c
+vAltera_UP_I2C_AV_Auto_Initialize
+R14
+!i10b 1
+!s100 TbIA;9787GSRoV9be_N2^2
+IUP9kiHEFdHWmKGOLJ6dW;1
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c_av_auto_initialize.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c_av_auto_initialize.v
+R13
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c_av_auto_initialize.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_i2c_av_auto_initialize.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@i2@c_@a@v_@auto_@initialize
+vAltera_UP_Slow_Clock_Generator
+R14
+!i10b 1
+!s100 U@B3NehPQRXcdeI<e=@I53
+I0640UZ9^Q`W7=NI3U8fiG3
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_slow_clock_generator.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_slow_clock_generator.v
+L0 53
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_slow_clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_slow_clock_generator.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@slow_@clock_@generator
+vAltera_UP_SYNC_FIFO
+R1
+!i10b 1
+!s100 jDg=^5VOBFbFho_;gZbiA1
+IMAIL>W>::Mbk?MS4@2H2W1
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_sync_fifo.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_sync_fifo.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/altera_up_sync_fifo.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@s@y@n@c_@f@i@f@o
+vaudio_and_video_config
+Z16 !s110 1551493918
+!i10b 1
+!s100 z3>_mDg4hMjn4VjXHn00U3
+I8Boa[Cc@CBLWOO[@<z`MS1
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/audio_and_video_config.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/audio_and_video_config.v
+R4
+R5
+r1
+!s85 0
+31
+Z17 !s108 1551493918.000000
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/audio_and_video_config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/audio_and_video_config.v|
+!i113 1
+R7
+R8
+R9
+vaudio_codec
+R10
+!i10b 1
+!s100 43h1ad@K@aG98IRVc4i1M1
+IEK5UCcHlH58Oj6:gP6eBc3
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/audio_codec.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/audio_codec.v
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/audio_codec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/audio_codec.v|
+!i113 1
+R7
+R8
+R9
+vclock_generator
+R16
+!i10b 1
+!s100 39OA<gKn`aijkLgT:8]8i2
+ILD`ld6:W@[YU6EUVL190g2
+R2
+R0
+R3
+8C:/Users/Student User/Downloads/DE1-SoCTask3/clock_generator.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/clock_generator.v
+R13
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/clock_generator.v|
+!i113 1
+R7
+R8
+R9
+vFIFO
+Z18 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z19 !s110 1551493923
+!i10b 1
+!s100 gC<4e90flMnTG<S2HCl5E1
+I`?G5Kg:SVVc>F<;fF9MKc2
+R2
+!s105 FIFO_sv_unit
+S1
+R0
+w1551349519
+8C:/Users/Student User/Downloads/DE1-SoCTask3/FIFO.sv
+FC:/Users/Student User/Downloads/DE1-SoCTask3/FIFO.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z20 !s108 1551493923.000000
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/FIFO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/FIFO.sv|
+!i113 1
+Z21 o-sv -work work
+Z22 !s92 -sv -work work {+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3}
+R9
+n@f@i@f@o
+vfilter
+R18
+R19
+!i10b 1
+!s100 Hh92JfKgW=_XUQjI;GXin2
+I9=2iWQI7EDJ8cli4P1iUk1
+R2
+Z23 !s105 filter_sv_unit
+S1
+R0
+Z24 w1551388297
+Z25 8C:/Users/Student User/Downloads/DE1-SoCTask3/filter.sv
+Z26 FC:/Users/Student User/Downloads/DE1-SoCTask3/filter.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R20
+Z27 !s107 C:/Users/Student User/Downloads/DE1-SoCTask3/filter.sv|
+Z28 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/filter.sv|
+!i113 1
+R21
+R22
+R9
+vfilter_tb
+R18
+R19
+!i10b 1
+!s100 9JPj:>AWgb20;j>_ULc@j0
+IJ;nlG@H0Of1[`Zg><YC3H0
+R2
+R23
+S1
+R0
+R24
+R25
+R26
+L0 55
+R5
+r1
+!s85 0
+31
+R20
+R27
+R28
+!i113 1
+R21
+R22
+R9
+vpart1
+R16
+!i10b 1
+!s100 4Vk8MQf_3kD<_CKaZioVR1
+IcWNUE`VSK^5:U8SkHlb0Y2
+R2
+R0
+w1551351025
+8C:/Users/Student User/Downloads/DE1-SoCTask3/part1.v
+FC:/Users/Student User/Downloads/DE1-SoCTask3/part1.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1551493917.000000
+!s107 C:/Users/Student User/Downloads/DE1-SoCTask3/part1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Student User/Downloads/DE1-SoCTask3|C:/Users/Student User/Downloads/DE1-SoCTask3/part1.v|
+!i113 1
+R7
+R8
+R9

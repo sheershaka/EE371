@@ -1,0 +1,89 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task1 {D:/Padia/EE371 Labs/Lab4/Task1/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:04:14 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task1" D:/Padia/EE371 Labs/Lab4/Task1/controller.sv 
+# -- Compiling module controller
+# -- Compiling module controller_testbench
+# 
+# Top level modules:
+# 	controller_testbench
+# End time: 07:04:14 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task1 {D:/Padia/EE371 Labs/Lab4/Task1/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:04:14 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task1" D:/Padia/EE371 Labs/Lab4/Task1/datapath.sv 
+# -- Compiling module datapath
+# -- Compiling module datapath_testbench
+# 
+# Top level modules:
+# 	datapath_testbench
+# End time: 07:04:15 on Feb 23,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task1 {D:/Padia/EE371 Labs/Lab4/Task1/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:04:15 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task1" D:/Padia/EE371 Labs/Lab4/Task1/seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 07:04:15 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task1 {D:/Padia/EE371 Labs/Lab4/Task1/clock_divider.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:04:15 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task1" D:/Padia/EE371 Labs/Lab4/Task1/clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 07:04:15 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task1 {D:/Padia/EE371 Labs/Lab4/Task1/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:04:15 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task1" D:/Padia/EE371 Labs/Lab4/Task1/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 07:04:15 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_testbench
+# vsim work.DE1_SoC_testbench 
+# Start time: 07:04:18 on Feb 23,2019
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.seg7
+# Loading work.controller
+# Loading work.datapath
+add wave -position end  sim:/DE1_SoC_testbench/clk
+add wave -position end  sim:/DE1_SoC_testbench/SW[9]
+add wave -position end  sim:/DE1_SoC_testbench/SW
+add wave -position end  sim:/DE1_SoC_testbench/LEDR[9]
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/KEY[0]
+run -all
+# ** Note: $stop    : D:/Padia/EE371 Labs/Lab4/Task1/DE1_SoC.sv(102)
+#    Time: 4350 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at D:/Padia/EE371 Labs/Lab4/Task1/DE1_SoC.sv line 102
+# End time: 07:06:32 on Feb 23,2019, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 0

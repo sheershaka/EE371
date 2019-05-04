@@ -1,0 +1,25 @@
+module score (p1_score, p2_score, winner, HEX4, HEX5);
+
+	input logic [3:0] p1_score;
+	input logic [3:0] p2_score;
+	input logic [1:0] winner;
+	
+	output logic [6:0] HEX4, HEX5;
+
+	always_comb begin
+		if (winner > 0) begin
+			// Show the winner on HEX5 and HEX4 (i.e. P1 or P2)
+			HEX5 = 7'b0001100;				// P
+			case (winner)
+				2'd1: HEX4 = 7'b0100100;	// 1
+				2'd2: HEX4 = 7'b1111001;	// 2
+				default: HEX4 = 7'b1111111;
+			endcase
+		end
+		else begin
+			HEX5 = 7'b1111111;
+			HEX4 = 7'b1111111;
+		end
+	end
+
+endmodule

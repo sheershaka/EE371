@@ -1,0 +1,77 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task2 {D:/Padia/EE371 Labs/Lab4/Task2/ram32x8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:19:28 on Feb 23,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task2" D:/Padia/EE371 Labs/Lab4/Task2/ram32x8.v 
+# -- Compiling module ram32x8
+# 
+# Top level modules:
+# 	ram32x8
+# End time: 07:19:29 on Feb 23,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task2 {D:/Padia/EE371 Labs/Lab4/Task2/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:19:29 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task2" D:/Padia/EE371 Labs/Lab4/Task2/seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 07:19:29 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task2 {D:/Padia/EE371 Labs/Lab4/Task2/clock_divider.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:19:29 on Feb 23,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Task2" D:/Padia/EE371 Labs/Lab4/Task2/clock_divider.sv 
+# -- Compiling module clock_divider
+# ** Error (suppressible): (vlog-7061) D:/Padia/EE371 Labs/Lab4/Task2/clock_divider.sv(12): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See D:/Padia/EE371 Labs/Lab4/Task2/clock_divider.sv(9).
+# End time: 07:19:29 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_run_msim_rtl_verilog.do line 10
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Task2 {D:/Padia/EE371 Labs/Lab4/Task2/clock_divider.sv}"
+vlog -reportprogress 300 -work work {D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:19:54 on Feb 23,2019
+# vlog -reportprogress 300 -work work D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv 
+# -- Compiling module datapath
+# -- Compiling module datapath_testbench
+# 
+# Top level modules:
+# 	datapath_testbench
+# End time: 07:19:54 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.datapath_testbench
+# vsim work.datapath_testbench 
+# Start time: 07:19:57 on Feb 23,2019
+# Loading sv_std.std
+# Loading work.datapath_testbench
+# Loading work.datapath
+add wave -position end  sim:/datapath_testbench/CLOCK_PERIOD
+add wave -position end  sim:/datapath_testbench/clk
+add wave -position end  sim:/datapath_testbench/reset_bounds
+add wave -position end  sim:/datapath_testbench/set_high
+add wave -position end  sim:/datapath_testbench/set_low
+add wave -position end  sim:/datapath_testbench/ram_data
+add wave -position end  sim:/datapath_testbench/current_data
+add wave -position end  sim:/datapath_testbench/data_addr
+run -all
+# ** Note: $stop    : D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv(57)
+#    Time: 1250 ps  Iteration: 1  Instance: /datapath_testbench
+# Break in Module datapath_testbench at D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv line 57
+# End time: 07:20:38 on Feb 23,2019, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0

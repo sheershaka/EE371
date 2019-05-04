@@ -1,0 +1,63 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/lab3 {D:/Padia/EE371 Labs/lab3/VGA_framebuffer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 04:43:50 on Feb 01,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/lab3" D:/Padia/EE371 Labs/lab3/VGA_framebuffer.sv 
+# -- Compiling module VGA_framebuffer
+# 
+# Top level modules:
+# 	VGA_framebuffer
+# End time: 04:43:50 on Feb 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/lab3 {D:/Padia/EE371 Labs/lab3/line_drawer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 04:43:50 on Feb 01,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/lab3" D:/Padia/EE371 Labs/lab3/line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_testbench
+# 
+# Top level modules:
+# 	line_drawer_testbench
+# End time: 04:43:51 on Feb 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/lab3 {D:/Padia/EE371 Labs/lab3/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 04:43:51 on Feb 01,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/lab3" D:/Padia/EE371 Labs/lab3/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 04:43:51 on Feb 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.line_drawer_testbench
+# vsim work.line_drawer_testbench 
+# Start time: 04:44:10 on Feb 01,2019
+# Loading sv_std.std
+# Loading work.line_drawer_testbench
+# Loading work.line_drawer
+add wave -position end  sim:/line_drawer_testbench/x0
+add wave -position 0  sim:/line_drawer_testbench/clk
+add wave -position end  sim:/line_drawer_testbench/y0
+add wave -position end  sim:/line_drawer_testbench/x1
+add wave -position end  sim:/line_drawer_testbench/y1
+add wave -position end  sim:/line_drawer_testbench/x
+add wave -position end  sim:/line_drawer_testbench/y
+run -all
+# ** Note: $stop    : D:/Padia/EE371 Labs/lab3/line_drawer.sv(103)
+#    Time: 64100 ps  Iteration: 1  Instance: /line_drawer_testbench
+# Break in Module line_drawer_testbench at D:/Padia/EE371 Labs/lab3/line_drawer.sv line 103
+# End time: 04:47:29 on Feb 01,2019, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 0

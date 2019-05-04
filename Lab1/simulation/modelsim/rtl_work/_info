@@ -1,0 +1,213 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/labs/Lab1/simulation/modelsim
+vclock_divider
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1547630527
+!i10b 1
+!s100 ]R0QSMN70jmYzJP[gDc`X1
+IDMJ=DlnEm@R53OP60M;Qa0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z5 w1547612018
+Z6 8D:/labs/Lab1/DE1_SoC.sv
+Z7 FD:/labs/Lab1/DE1_SoC.sv
+L0 35
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1547630527.000000
+Z10 !s107 D:/labs/Lab1/DE1_SoC.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/labs/Lab1|D:/labs/Lab1/DE1_SoC.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/labs/Lab1
+Z14 tCvgOpt 0
+vDE1_SoC_testbench
+R1
+!s110 1547630528
+!i10b 1
+!s100 Dc_8a;HhG?SYISPF<jClm2
+ICi67B?NRHAC8H1EH^0`782
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 45
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vdisplay
+R1
+Z15 !s110 1547630526
+!i10b 1
+!s100 75_f[UIU9e0Pg5<VG6maL2
+I`8Fh_b00bWRCN3_2JH[H`1
+R3
+Z16 !s105 display_sv_unit
+S1
+R0
+Z17 w1547611642
+Z18 8D:/labs/Lab1/display.sv
+Z19 FD:/labs/Lab1/display.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z20 !s108 1547630525.000000
+Z21 !s107 D:/labs/Lab1/display.sv|
+Z22 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/labs/Lab1|D:/labs/Lab1/display.sv|
+!i113 1
+R12
+R13
+R14
+vdisplay_testbench
+R1
+R15
+!i10b 1
+!s100 aTj6SYJ2RB[F5j:c`?QaL1
+I;Q>O0[hogJMV>LEOI7>]I3
+R3
+R16
+S1
+R0
+R17
+R18
+R19
+L0 117
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!i113 1
+R12
+R13
+R14
+vFSM
+R1
+R2
+!i10b 1
+!s100 17hMTVnFFhMllaAieF6f>2
+IjjWD6`gC^lad2DScQmRD53
+R3
+Z23 !s105 FSM_sv_unit
+S1
+R0
+Z24 w1547611270
+Z25 8D:/labs/Lab1/FSM.sv
+Z26 FD:/labs/Lab1/FSM.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z27 !s108 1547630526.000000
+Z28 !s107 D:/labs/Lab1/FSM.sv|
+Z29 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/labs/Lab1|D:/labs/Lab1/FSM.sv|
+!i113 1
+R12
+R13
+R14
+n@f@s@m
+vFSM_testbench
+R1
+R2
+!i10b 1
+!s100 jNC5_]nlVT9`nU298lF9m1
+Io2XcO[18PGh9W;ZCgJZa]0
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 26
+R8
+r1
+!s85 0
+31
+R27
+R28
+R29
+!i113 1
+R12
+R13
+R14
+n@f@s@m_testbench
+vup_counter
+R1
+R2
+!i10b 1
+!s100 0i0Rkb30RU0DL]an_;cSR2
+IWB8RSkSmOG1<7UeKk7ER90
+R3
+Z30 !s105 up_counter_sv_unit
+S1
+R0
+Z31 w1547604106
+Z32 8D:/labs/Lab1/up_counter.sv
+Z33 FD:/labs/Lab1/up_counter.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z34 !s107 D:/labs/Lab1/up_counter.sv|
+Z35 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/labs/Lab1|D:/labs/Lab1/up_counter.sv|
+!i113 1
+R12
+R13
+R14
+vup_counter_testbench
+R1
+R2
+!i10b 1
+!s100 mDMke]dNDk<n_I=]fDeQn3
+IP`fVTm4C1ga7OZ^Vz>33g1
+R3
+R30
+S1
+R0
+R31
+R32
+R33
+L0 20
+R8
+r1
+!s85 0
+31
+R9
+R34
+R35
+!i113 1
+R12
+R13
+R14

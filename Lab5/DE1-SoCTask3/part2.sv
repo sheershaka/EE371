@@ -1,0 +1,143 @@
+module part2 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
+		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
+
+	input logic CLOCK_50, CLOCK2_50;
+	input logic [0:0] KEY;
+	
+	// I2C Audio/Video config interface
+	output logic FPGA_I2C_SCLK;
+	inout FPGA_I2C_SDAT;
+	
+	// Audio CODEC
+	output logic AUD_XCK;
+	input logic AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK;
+	input logic AUD_ADCDAT;
+	output logic AUD_DACDAT;
+	
+	// Local wires.
+	logic read_ready, write_ready, read, write;
+	logic [23:0] readdata_left, readdata_right;
+	logic [23:0] writedata_left, writedata_right;
+	logic reset;
+	assign reset = ~KEY[0];
+
+	/////////////////////////////////
+	// Your code goes here 
+	/////////////////////////////////
+	
+	// LEFT SOUND SIGNALS
+	logic signed [23:0] data_out_left;
+	logic signed [23:0] DI0, DI1, DI2, DI3, DI4, DI5, DI6;
+	logic signed [23:0] DI_shifted, DI0_shifted, DI1_shifted, DI2_shifted, DI3_shifted, DI4_shifted, DI5_shifted, DI6_shifted;
+	always_ff @(posedge CLOCK_50) begin
+		DI0 <= readdata_left;
+		DI1 <= DI0;
+		DI2 <= DI1;
+		DI3 <= DI2;
+		DI4 <= DI3;
+		DI5 <= DI4;
+		DI6 <= DI5;
+	end
+	
+	always_comb begin
+		//DI_shifted = (readdata_left >>> 3);
+		DI_shifted = {{3{readdata_left[23]}}, {readdata_left[23:3]}};
+		//DI0_shifted = (DI0 >>> 3);
+		DI0_shifted = {{3{DI0[23]}}, {DI0[23:3]}};
+		DI1_shifted = {{3{DI1[23]}}, {DI1[23:3]}};
+		DI2_shifted = {{3{DI2[23]}}, {DI2[23:3]}};
+		DI3_shifted = {{3{DI3[23]}}, {DI3[23:3]}};
+		DI4_shifted = {{3{DI4[23]}}, {DI4[23:3]}};
+		DI5_shifted = {{3{DI5[23]}}, {DI5[23:3]}};
+		DI6_shifted = {{3{DI6[23]}}, {DI6[23:3]}};
+	end
+	assign data_out_left = DI_shifted + DI0_shifted + DI1_shifted + DI2_shifted + DI3_shifted + DI4_shifted + DI5_shifted + DI6_shifted;
+	
+	// RIGHT SOUND SIGNALS
+	logic signed [23:0] data_out_right;
+	logic signed [23:0] DI0_r, DI1_r, DI2_r, DI3_r, DI4_r, DI5_r, DI6_r; 
+	logic signed [23:0] DI_shifted_r, DI0_shifted_r, DI1_shifted_r, DI2_shifted_r, DI3_shifted_r, DI4_shifted_r, DI5_shifted_r, DI6_shifted_r;
+	always_ff @(posedge CLOCK_50) begin
+		DI0_r <= readdata_right;
+		DI1_r <= DI0_r;
+		DI2_r <= DI1_r;
+		DI3_r <= DI2_r;
+		DI4_r <= DI3_r;
+		DI5_r <= DI4_r;
+		DI6_r <= DI5_r;
+	end
+	
+	always_comb begin
+		//DI_shifted_r = (readdata_right >>> 3);
+		DI_shifted_r = {{3{readdata_right[23]}}, {readdata_right[23:3]}};
+		//DI0_shifted_r = (DI0_r >>> 3);
+		DI0_shifted_r = {{3{DI0_r[23]}}, {DI0_r[23:3]}};
+		DI1_shifted_r = {{3{DI1_r[23]}}, {DI1_r[23:3]}};
+		DI2_shifted_r = {{3{DI2_r[23]}}, {DI2_r[23:3]}};
+		DI3_shifted_r = {{3{DI3_r[23]}}, {DI3_r[23:3]}};
+		DI4_shifted_r = {{3{DI4_r[23]}}, {DI4_r[23:3]}};
+		DI5_shifted_r = {{3{DI5_r[23]}}, {DI5_r[23:3]}};
+		DI6_shifted_r = {{3{DI6_r[23]}}, {DI6_r[23:3]}};
+	end
+	assign data_out_right = DI_shifted_r + DI0_shifted_r + DI1_shifted_r + DI2_shifted_r + DI3_shifted_r + DI4_shifted_r + DI5_shifted_r + DI6_shifted_r;
+	
+	assign writedata_left = (write_ready) ? (data_out_left):(writedata_left); //put a ternary here
+	assign writedata_right =  (write_ready && read_ready) ? (data_out_right):(writedata_right);//put a ternary here
+	assign read =  read_ready;
+	assign write = write_ready;
+
+/////////////////////////////////////////////////////////////////////////////////
+// Audio CODEC interface. 
+//
+// The interface consists of the following wires:
+// read_ready, write_ready - CODEC ready for read/write operation 
+// readdata_left, readdata_right - left and right channel data from the CODEC
+// read - send data from the CODEC (both channels)
+// writedata_left, writedata_right - left and right channel data to the CODEC
+// write - send data to the CODEC (both channels)
+// AUD_* - should connect to top-level entity I/O of the same name.
+//         These signals go directly to the Audio CODEC
+// I2C_* - should connect to top-level entity I/O of the same name.
+//         These signals go directly to the Audio/Video Config module
+/////////////////////////////////////////////////////////////////////////////////
+	clock_generator my_clock_gen(
+		// inputs
+		CLOCK2_50,
+		reset,
+
+		// outputs
+		AUD_XCK
+	);
+
+	audio_and_video_config cfg(
+		// Inputs
+		CLOCK_50,
+		reset,
+
+		// Bidirectionals
+		FPGA_I2C_SDAT,
+		FPGA_I2C_SCLK
+	);
+
+	audio_codec codec(
+		// Inputs
+		CLOCK_50,
+		reset,
+
+		read,	write,
+		writedata_left, writedata_right,
+
+		AUD_ADCDAT,
+
+		// Bidirectionals
+		AUD_BCLK,
+		AUD_ADCLRCK,
+		AUD_DACLRCK,
+
+		// Outputs
+		read_ready, write_ready,
+		readdata_left, readdata_right,
+		AUD_DACDAT
+	);
+
+endmodule

@@ -1,0 +1,69 @@
+module datapath(input logic clk, reset_bounds, set_high, set_low,
+					 input logic [7:0] ram_data,
+					 output logic [7:0] current_data,
+					 output logic [4:0] data_addr);
+	
+	logic [4:0] low, high, mid;
+	assign mid = (high + low) / 2;
+
+	
+	always_ff @(posedge clk) begin
+		if (reset_bounds) begin
+			low <= 5'b00000;
+			high <= 5'b11111;
+		end
+		if (set_high) high <= mid;
+		if (set_low) low <= mid;
+	end
+	
+	assign current_data = ram_data;
+	assign data_addr = mid;
+	
+endmodule
+
+
+/*
+module datapath_testbench();
+
+	logic clk, setA, resetResult, incrResult, shiftA;
+	logic [7:0] A;
+	logic [3:0] count;
+	logic A_zero, A_0;
+	
+	datapath dut(.clk, .setA, .resetResult, .incrResult, .shiftA, .A,
+				.count, .A_zero, .A_0);
+	
+
+	// Set up the clock. 
+	parameter CLOCK_PERIOD=100; 
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+
+	// Set up the inputs to the design. Each line is a clock cycle.
+	initial begin	
+		A <= 8'b11000000; setA <= 1'b1; resetResult <= 1'b1;
+		incrResult <= 1'b0; shiftA <= 1'b0; 									@(posedge clk);  
+																						@(posedge clk);
+		setA <= 1'b0; resetResult <= 1'b0;	shiftA <= 1'b1;			@(posedge clk);
+																						@(posedge clk);  // A_0 should be 0 till now
+																						@(posedge clk);
+																						@(posedge clk);
+																						@(posedge clk);
+																						@(posedge clk);
+																						@(posedge clk);  // A_0 should be 1 now
+																						@(posedge clk);
+																						@(posedge clk);  // A_0 - 0 and A_zero = 1
+		incrResult <= 1'b1; 														@(posedge clk);
+																						@(posedge clk);
+																						@(posedge clk);
+																						@(posedge clk);  // Count should be 4 by now
+																						@(posedge clk);
+		
+																						
+		
+		$stop;
+   end
+endmodule
+*/

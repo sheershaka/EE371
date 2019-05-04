@@ -1,0 +1,44 @@
+module music_storage #(parameter N=44000)
+							(input logic clk, enable, start_read, start_write,
+							input logic [23:0] input_left, input_right,
+							output logic [23:0] output_left, output_right,
+							output logic writing, done_write);
+	
+	
+  // [23:0] data_right, [47:24] data_left	
+  logic [47:0] ram [0:N];
+  
+  logic writing_reg, reading;
+  logic [17:0] currAddr;
+  
+  assign writing = writing_reg;
+  
+	assign {output_left, output_right} = reading ? ram[currAddr] : 48'd0;
+   
+  always_ff @(posedge clk) begin
+	if (start_write) begin
+		writing_reg <= 1'b1;
+		currAddr <= 18'd0;
+	end else begin
+		if (enable && writing_reg && currAddr < N ) begin
+			ram[currAddr] <= {input_left, input_right};
+			currAddr <= currAddr + 1'b1;
+		end else if (writing_reg && currAddr == N ) begin
+			writing_reg <= 1'b0;
+		end
+	end
+	if (start_read) begin
+		reading <= 1'b1;
+		currAddr <= 18'd0;
+	end else begin
+		if (enable && reading && currAddr < N ) begin
+			//{output_left, output_right} = ram[currAddr];
+			currAddr <= currAddr + 1'b1;
+			//currAddr <= 1'b1
+			// i think you dont need a done write
+		end else if (reading && currAddr == N ) begin
+			reading <= 1'b0;
+		end
+	end
+  end	
+endmodule

@@ -1,0 +1,19 @@
+
+module line_drawer(
+	input logic clk, reset,
+	input logic [10:0]	x0, y0, x1, y1, //the end points of the line
+	output logic [10:0]	x, y //outputs corresponding to the pair (x, y)
+	);
+	
+	/*
+	 * You'll need to create some registers to keep track of things
+	 * such as error and direction
+	 * Example: */
+	logic signed [11:0] error;
+	
+	always_ff @(posedge clk) begin
+	/*
+	 * Your code here
+	 */
+	end     
+endmodule

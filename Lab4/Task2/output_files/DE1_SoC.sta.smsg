@@ -1,0 +1,9 @@
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (332060): Node: clock_divider:cdiv|divided_clocks[10] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider:cdiv|divided_clocks[10] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider:cdiv|divided_clocks[10] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider:cdiv|divided_clocks[10] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.

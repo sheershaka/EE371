@@ -1,0 +1,132 @@
+module gamelogic (clk, start, reset, p1_up, p1_down, p2_up, p2_down, p1_y, p2_y, ball_on, ball_x, ball_y, p1_score, p2_score, winner);
+
+	input clk;
+	input reset;
+	//input video_clock;
+	input start;
+	input p1_up, p1_down, p2_up, p2_down;
+	output [10:0] p1_y, p2_y;
+	output [10:0] ball_x, ball_y;
+	output ball_on;
+	output [3:0] p1_score, p2_score; // 0 - 10
+	output [1:0] winner;	// 0 = none, 1 = P1, 2 = P2
+	
+	initial begin
+		p1_score <= 4'b0;
+		p2_score <= 4'b0;
+		winner <= 0;
+		ball_on <= 1;
+	end
+	
+	logic dir_x;		// 0 = LEFT, 1 = RIGHT
+	logic dir_y;		// 0 = UP, 1 = DOWN
+	
+	logic outofbounds;
+	logic newround;
+	
+	reg [25:0] count_sec;
+	reg [1:0] count_secs;
+	always_ff @(posedge clk) begin
+		if (outofbounds) begin
+			ball_on = 0;
+			
+			// Second counter
+			if (count_sec == 26'd49_999_999) begin
+				// 50,000,000 clock cycles per second since we're using CLOCK_50 (50 MHz)
+				count_sec = 26'd0;
+				count_secs = count_secs + 1;
+			end
+			else begin
+				// Increment every clock cycle
+				count_sec = count_sec + 1;
+			end
+			
+			// 3 secs after ball is out of bounds
+			if (count_secs == 3) begin
+			
+				// Increment the score on the first clock cycle
+				// We need to check for this so the score is only incremented ONCE
+				if (count_sec == 26'd1) begin
+					if (dir_x) begin
+						// Out of bounds on the right
+						p1_score = p1_score + 1;
+					end
+					else begin
+						// Out of bounds on the left
+						p2_score = p2_score + 1;
+					end	
+				end
+				
+				// Check if someone has won
+				if (p1_score == 4'd10) begin
+					winner = 2'd1;
+				end
+				else if (p2_score == 4'd10) begin
+					winner = 2'd2;
+				end
+				
+				// New round
+				ball_on = 1;
+				newround = 1;
+			end
+		end
+		else begin
+			if (newround) begin
+				newround = 0;
+			end
+			count_secs = 1'b0;
+			count_sec = 26'd0;
+			
+			if (reset) begin
+				p1_score = 0;
+				p2_score = 0;
+				winner = 0;
+			end
+		end
+	end
+	
+	// Module for controlling player 1's bat
+	batpos b1 (
+		.clk(video_clock && start),
+		.up(p1_up),
+		.down(p1_down),
+		.reset(reset),
+		.speed(batspeed),
+		.value(p1_y)
+		);
+		
+	// Module for controlling player 2's bat
+	batpos b2 (
+		.clk(video_clock && start),
+		.up(p2_up),
+		.down(p2_down),
+		.reset(reset),
+		.speed(batspeed),
+		.value(p2_y)
+		);
+		
+	// Ball collision detection module
+	ballcollisions bcs (
+		.clk(video_clock && start && ball_on),
+		.reset(reset || newround),
+		.p1_y(p1_y),
+		.p2_y(p2_y),
+		.ball_x(ball_x),
+		.ball_y(ball_y),
+		.dir_x(dir_x),
+		.dir_y(dir_y),
+		.oob(outofbounds)
+		);
+	
+	// Module with counters that determining the ball position
+	ballpos bp (
+		.clk(video_clock && start && ball_on),
+		.reset(reset || newround || (winner > 0)),
+		.speed(ballspeed),
+		.dir_x(dir_x),
+		.dir_y(dir_y),
+		.value_x(ball_x),
+		.value_y(ball_y)
+		);
+		
+endmodule

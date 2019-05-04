@@ -1,0 +1,356 @@
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runparking.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:38 on Jan 18,2019
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:50:39 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:40 on Jan 18,2019
+# vlog -reportprogress 300 ./victory.sv 
+# -- Compiling module victory
+# -- Compiling module victory_testbench
+# 
+# Top level modules:
+# 	victory_testbench
+# End time: 18:50:41 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:41 on Jan 18,2019
+# vlog -reportprogress 300 ./centerLight.sv 
+# -- Compiling module centerLight
+# -- Compiling module centerLight_testbench
+# 
+# Top level modules:
+# 	centerLight_testbench
+# End time: 18:50:42 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:42 on Jan 18,2019
+# vlog -reportprogress 300 ./normalLight.sv 
+# -- Compiling module normalLight
+# -- Compiling module normalLight_testbench
+# 
+# Top level modules:
+# 	normalLight
+# 	normalLight_testbench
+# End time: 18:50:43 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:43 on Jan 18,2019
+# vlog -reportprogress 300 ./tugOfWar.sv 
+# -- Compiling module tugOfWar
+# 
+# Top level modules:
+# 	tugOfWar
+# End time: 18:50:45 on Jan 18,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:45 on Jan 18,2019
+# vlog -reportprogress 300 ./DFF_2.sv 
+# -- Compiling module DFF_2
+# -- Compiling module DFF_2_testbench
+# 
+# Top level modules:
+# 	DFF_2_testbench
+# End time: 18:50:46 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:46 on Jan 18,2019
+# vlog -reportprogress 300 ./scoreDisplay.sv 
+# -- Compiling module scoreDisplay
+# 
+# Top level modules:
+# 	scoreDisplay
+# End time: 18:50:47 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:47 on Jan 18,2019
+# vlog -reportprogress 300 ./lfsr.sv 
+# -- Compiling module lfsr
+# -- Compiling module lfsr_testbench
+# 
+# Top level modules:
+# 	lfsr_testbench
+# End time: 18:50:49 on Jan 18,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:49 on Jan 18,2019
+# vlog -reportprogress 300 ./comparator.sv 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 18:50:50 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:50 on Jan 18,2019
+# vlog -reportprogress 300 ./parking.sv 
+# -- Compiling module parking
+# -- Compiling module parking_testbench
+# 
+# Top level modules:
+# 	parking_testbench
+# End time: 18:50:51 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:51 on Jan 18,2019
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 18:50:52 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:52 on Jan 18,2019
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:50:53 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 18:50:53 on Jan 18,2019
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.button
+# Loading work.DFF_2
+# Loading work.parking
+# Loading work.counter
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./counter.sv(9): [PCDPC] - Port size (5) does not match connection size (32) for port 'bcd'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h0 File: ./seg7.sv
+# ** Warning: (vsim-3015) ./counter.sv(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'isSecond'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h0 File: ./seg7.sv
+# ** Warning: (vsim-3015) ./counter.sv(10): [PCDPC] - Port size (5) does not match connection size (32) for port 'bcd'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h1 File: ./seg7.sv
+# ** Warning: (vsim-3015) ./counter.sv(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'isSecond'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h1 File: ./seg7.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(84)
+#    Time: 4150 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 84
+vsim work.parking_testbench
+# End time: 18:51:40 on Jan 18,2019, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 4
+# vsim work.parking_testbench 
+# Start time: 18:51:40 on Jan 18,2019
+# Loading sv_std.std
+# Loading work.parking_testbench
+# Loading work.parking
+add wave -position end  sim:/parking_testbench/clk
+add wave -position end  sim:/parking_testbench/reset
+add wave -position end  sim:/parking_testbench/A
+add wave -position end  sim:/parking_testbench/B
+add wave -position end  sim:/parking_testbench/Entry
+add wave -position end  sim:/parking_testbench/Exit
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {U:/EE 371/Lab1/waveparking.do}
+do runparking.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:18 on Jan 18,2019
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 18:52:19 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:19 on Jan 18,2019
+# vlog -reportprogress 300 ./victory.sv 
+# -- Compiling module victory
+# -- Compiling module victory_testbench
+# 
+# Top level modules:
+# 	victory_testbench
+# End time: 18:52:20 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:20 on Jan 18,2019
+# vlog -reportprogress 300 ./centerLight.sv 
+# -- Compiling module centerLight
+# -- Compiling module centerLight_testbench
+# 
+# Top level modules:
+# 	centerLight_testbench
+# End time: 18:52:21 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:21 on Jan 18,2019
+# vlog -reportprogress 300 ./normalLight.sv 
+# -- Compiling module normalLight
+# -- Compiling module normalLight_testbench
+# 
+# Top level modules:
+# 	normalLight
+# 	normalLight_testbench
+# End time: 18:52:22 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:22 on Jan 18,2019
+# vlog -reportprogress 300 ./tugOfWar.sv 
+# -- Compiling module tugOfWar
+# 
+# Top level modules:
+# 	tugOfWar
+# End time: 18:52:23 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:23 on Jan 18,2019
+# vlog -reportprogress 300 ./DFF_2.sv 
+# -- Compiling module DFF_2
+# -- Compiling module DFF_2_testbench
+# 
+# Top level modules:
+# 	DFF_2_testbench
+# End time: 18:52:24 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:24 on Jan 18,2019
+# vlog -reportprogress 300 ./scoreDisplay.sv 
+# -- Compiling module scoreDisplay
+# 
+# Top level modules:
+# 	scoreDisplay
+# End time: 18:52:26 on Jan 18,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:26 on Jan 18,2019
+# vlog -reportprogress 300 ./lfsr.sv 
+# -- Compiling module lfsr
+# -- Compiling module lfsr_testbench
+# 
+# Top level modules:
+# 	lfsr_testbench
+# End time: 18:52:27 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:27 on Jan 18,2019
+# vlog -reportprogress 300 ./comparator.sv 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 18:52:28 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:28 on Jan 18,2019
+# vlog -reportprogress 300 ./parking.sv 
+# -- Compiling module parking
+# -- Compiling module parking_testbench
+# 
+# Top level modules:
+# 	parking_testbench
+# End time: 18:52:29 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:29 on Jan 18,2019
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 18:52:30 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:52:30 on Jan 18,2019
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 18:52:31 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:52:33 on Jan 18,2019, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 18:52:33 on Jan 18,2019
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.button
+# Loading work.DFF_2
+# Loading work.parking
+# Loading work.counter
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./counter.sv(9): [PCDPC] - Port size (5) does not match connection size (32) for port 'bcd'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h0 File: ./seg7.sv
+# ** Warning: (vsim-3015) ./counter.sv(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'isSecond'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h0 File: ./seg7.sv
+# ** Warning: (vsim-3015) ./counter.sv(10): [PCDPC] - Port size (5) does not match connection size (32) for port 'bcd'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h1 File: ./seg7.sv
+# ** Warning: (vsim-3015) ./counter.sv(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'isSecond'. The port definition is at: ./seg7.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut/c/h1 File: ./seg7.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(84)
+#    Time: 4150 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 84
+do runparking.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:55:00 on Jan 18,2019
+# vlog -reportprogress 300 ./parking.sv 
+# -- Compiling module parking
+# -- Compiling module parking_testbench
+# 
+# Top level modules:
+# 	parking_testbench
+# End time: 18:55:01 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:55:03 on Jan 18,2019, Elapsed time: 0:02:30
+# Errors: 0, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work parking_testbench 
+# Start time: 18:55:03 on Jan 18,2019
+# Loading sv_std.std
+# Loading work.parking_testbench
+# Loading work.parking
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./parking.sv(128)
+#    Time: 4850 ps  Iteration: 1  Instance: /parking_testbench
+# Break in Module parking_testbench at ./parking.sv line 128
+do runparking.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:18 on Jan 18,2019
+# vlog -reportprogress 300 ./parking.sv 
+# -- Compiling module parking
+# -- Compiling module parking_testbench
+# 
+# Top level modules:
+# 	parking_testbench
+# End time: 18:58:19 on Jan 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:58:25 on Jan 18,2019, Elapsed time: 0:03:22
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work parking_testbench 
+# Start time: 18:58:25 on Jan 18,2019
+# Loading sv_std.std
+# Loading work.parking_testbench
+# Loading work.parking
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./parking.sv(124)
+#    Time: 4450 ps  Iteration: 1  Instance: /parking_testbench
+# Break in Module parking_testbench at ./parking.sv line 124
+# End time: 19:12:57 on Jan 18,2019, Elapsed time: 0:14:32
+# Errors: 0, Warnings: 0

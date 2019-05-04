@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Padia/EE371 Labs/Lab4/Task2/simulation/modelsim
+vdatapath
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1550935194
+!i10b 1
+!s100 ^9V`_1C2DXLE=ZCiDIfY@1
+I<GHHCezfYO>06UH3Dkf^M2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 datapath_sv_unit
+S1
+R0
+Z5 w1550784224
+Z6 8D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv
+Z7 FD:/Padia/EE371 Labs/Lab4/Task2/datapath.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1550935194.000000
+Z10 !s107 D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv|
+Z11 !s90 -reportprogress|300|-work|work|D:/Padia/EE371 Labs/Lab4/Task2/datapath.sv|
+!i113 1
+Z12 o-work work
+Z13 tCvgOpt 0
+vdatapath_testbench
+R1
+R2
+!i10b 1
+!s100 >d1nAU:iN=O>]SS<7JG3C3
+I5?TSDB=ej1X5fi9m0:mN82
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 22
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vram32x8
+!s110 1550935168
+!i10b 1
+!s100 k^gZ1mD7nd2mH^KF:n7AY0
+IKjE@NSIM?lHeIiNIjEeHM1
+R3
+R0
+w1550776460
+8D:/Padia/EE371 Labs/Lab4/Task2/ram32x8.v
+FD:/Padia/EE371 Labs/Lab4/Task2/ram32x8.v
+L0 40
+R8
+r1
+!s85 0
+31
+!s108 1550935168.000000
+!s107 D:/Padia/EE371 Labs/Lab4/Task2/ram32x8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Padia/EE371 Labs/Lab4/Task2|D:/Padia/EE371 Labs/Lab4/Task2/ram32x8.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+D:/Padia/EE371 Labs/Lab4/Task2}
+R13
+vseg7
+R1
+Z14 !s110 1550935169
+!i10b 1
+!s100 18D>:Hz8>[`420]h0zFbe3
+ITz^QHgH7A;nEC>8AdUc4F2
+R3
+Z15 !s105 seg7_sv_unit
+S1
+R0
+Z16 w1550779534
+Z17 8D:/Padia/EE371 Labs/Lab4/Task2/seg7.sv
+Z18 FD:/Padia/EE371 Labs/Lab4/Task2/seg7.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z19 !s108 1550935169.000000
+Z20 !s107 D:/Padia/EE371 Labs/Lab4/Task2/seg7.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Padia/EE371 Labs/Lab4/Task2|D:/Padia/EE371 Labs/Lab4/Task2/seg7.sv|
+!i113 1
+Z22 o-sv -work work
+Z23 !s92 -sv -work work {+incdir+D:/Padia/EE371 Labs/Lab4/Task2}
+R13
+vseg7_testbench
+R1
+R14
+!i10b 1
+!s100 P:eh6904C`Nc@4K5cGlDU1
+IC9jJ9oTP0cT@Xz?58lU3F3
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 129
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R22
+R23
+R13

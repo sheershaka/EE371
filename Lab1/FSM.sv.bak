@@ -1,0 +1,62 @@
+module FSM (clk, reset, in, out);
+
+	input logic clk, reset;
+	input logic [1:0] in;
+	output logic [1:0] out;
+	
+	enum { A , B, C, D } ps, ns;
+	
+	//always_comb begin
+	assign out[0] = ~in[0] & ~in[1] & ps[1];
+	assign out[1] = ~in[0] & ~in[1] & ps[0];
+	assign ns[0] = in[0];
+	assign ns[1] = in[1];
+	//end
+	
+	/*always_comb begin
+		case (ps)
+			A: if (in[0] & ~in[1]) begin 
+					ns = B; out = 2'b00;
+				end
+				else if (~in[0] & in[1]) begin
+					ns = C; out = 2'b00;
+				end
+				else begin
+					ns = A; out = 2'b00;
+				end
+			B: if (in[0] & in[1]) begin
+					ns = D; out = 2'b00;
+				end
+				else if (~in[0] & ~in[1]) begin
+					ns = A; out = 2'b01;
+				end
+				else begin
+					ns = A; out = 2'b00;
+				end
+			C: if (in[0] & in[1]) begin
+					ns = D; out = 2'b00;
+				end
+				else if (~in[0] & ~in[1]) begin
+					ns = A; out = 2'b10;
+				end
+				else begin
+					ns = A; out = 2'b00;
+				end
+			D: if (in[0] & ~in[1]) begin
+					ns = C; out = 2'b00;
+				end
+				else if (~in[0] & in[1]) begin
+					ns = C; out = 2'b00;
+				end
+				else begin
+					ns = A; out = 2'b00;
+				end
+		endcase
+	end*/
+	
+	always_ff @(posedge clk) begin
+		if (reset) ps <= A;
+		else ps <= ns;
+	end
+	
+endmodule

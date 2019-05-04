@@ -1,0 +1,71 @@
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Lab2Task12 {D:/Padia/EE371 Labs/Lab4/Lab2Task12/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:52 on Feb 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Lab2Task12" D:/Padia/EE371 Labs/Lab4/Lab2Task12/seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 14:18:52 on Feb 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Lab2Task12 {D:/Padia/EE371 Labs/Lab4/Lab2Task12/bitcount.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:52 on Feb 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Lab2Task12" D:/Padia/EE371 Labs/Lab4/Lab2Task12/bitcount.sv 
+# -- Compiling module bitcount
+# -- Compiling module bitcount_tb
+# 
+# Top level modules:
+# 	bitcount_tb
+# End time: 14:18:52 on Feb 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Padia/EE371\ Labs/Lab4/Lab2Task12 {D:/Padia/EE371 Labs/Lab4/Lab2Task12/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:53 on Feb 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Padia/EE371 Labs/Lab4/Lab2Task12" D:/Padia/EE371 Labs/Lab4/Lab2Task12/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:18:53 on Feb 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_testbench
+# vsim work.DE1_SoC_testbench 
+# Start time: 14:19:00 on Feb 19,2019
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.seg7
+# Loading work.bitcount
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_PERIOD
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_50
+add wave -position end  sim:/DE1_SoC_testbench/KEY
+add wave -position end  sim:/DE1_SoC_testbench/SW
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_testbench/HEX5
+add wave -position end  sim:/DE1_SoC_testbench/LEDR
+run -all
+# ** Note: $stop    : D:/Padia/EE371 Labs/Lab4/Lab2Task12/DE1_SoC.sv(100)
+#    Time: 2850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at D:/Padia/EE371 Labs/Lab4/Lab2Task12/DE1_SoC.sv line 100
+# End time: 14:29:48 on Feb 19,2019, Elapsed time: 0:10:48
+# Errors: 0, Warnings: 0

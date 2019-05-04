@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at keyboard_inner_driver.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/Student User/Desktop/Final Sound - Copy/keyboard_inner_driver.v Line: 47
+Info (10281): Verilog HDL Declaration information at seg7.sv(3): object "d" differs only in case from object "D" in the same scope File: C:/Users/Student User/Desktop/Final Sound - Copy/seg7.sv Line: 3

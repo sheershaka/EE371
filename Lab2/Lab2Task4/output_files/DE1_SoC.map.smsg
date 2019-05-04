@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(5): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/Padia/labs/Lab2Task4/DE1_SoC.sv Line: 5
+Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(5): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/Padia/labs/Lab2Task4/DE1_SoC.sv Line: 5
+Info (10281): Verilog HDL Declaration information at hex7.sv(3): object "d" differs only in case from object "D" in the same scope File: D:/Padia/labs/Lab2Task4/hex7.sv Line: 3

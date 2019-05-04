@@ -1,0 +1,122 @@
+module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50, 
+	VGA_R, VGA_G, VGA_B, VGA_BLANK_N, VGA_CLK, VGA_HS, VGA_SYNC_N, VGA_VS);
+	
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	output logic [9:0] LEDR;
+	input logic [3:0] KEY;
+	input logic [9:0] SW;
+
+	input CLOCK_50;
+	output [7:0] VGA_R;
+	output [7:0] VGA_G;
+	output [7:0] VGA_B;
+	output VGA_BLANK_N;
+	output VGA_CLK;
+	output VGA_HS;
+	output VGA_SYNC_N;
+	output VGA_VS;
+	
+	assign HEX0 = '1;
+	assign HEX1 = '1;
+	assign HEX2 = '1;
+	assign HEX3 = '1;
+	assign HEX4 = '1;
+	assign HEX5 = '1;
+	assign LEDR = SW;
+	
+	logic [10:0] x0, y0, x1, y1, x, y;
+	logic drawn, pixel_color;
+	
+	logic [10:0] x0_draw, x1_draw, y0_draw, y1_draw;
+	logic [10:0] x0_erase, x1_erase, y0_erase, y1_erase;
+	
+	wire [31:0] clk;
+	parameter whichClock = 22; 
+	clock_divider cdiv (CLOCK_50, clk);  // Comment out for simulation
+	
+	VGA_framebuffer fb(.clk50(CLOCK_50), .reset(1'b0), .x, .y,
+				.pixel_color, .pixel_write(1'b1),
+				.VGA_R, .VGA_G, .VGA_B, .VGA_CLK, .VGA_HS, .VGA_VS,
+				.VGA_BLANK_n(VGA_BLANK_N), .VGA_SYNC_n(VGA_SYNC_N));
+				
+	line_drawer lines (.clk(CLOCK_50), .reset(1'b0),
+				.x0, .y0, .x1, .y1, .x, .y, .drawn(drawn));
+				
+				
+				
+	logic reset, clear, erasing;
+	
+	//assign clear = ~KEY[0];
+	
+	DFF_2 d1(.clk(CLOCK_50), .reset, .D(~KEY[0]), .Q(clear));
+	
+	erase  e1(.clk(CLOCK_50), .beginErase(clear),
+				  .x0(x0_erase), .y0(y0_erase), .x1(x1_erase), .y1(y1_erase), .erasing);
+					  
+	initial begin
+		x0_draw = 20;
+		y0_draw = 250;
+		
+		x1_draw = 400;
+		y1_draw = 250;
+		ps = 1'b0; // 0: draw, 1:erase
+	end
+	
+
+					  
+	// A mux to select the color of the display
+	always_comb begin
+		if (erasing || (ps == 1'b1)) begin
+			pixel_color = 1'b0;
+			x0 = x0_erase;
+			x1 = x1_erase;
+			y0 = y0_erase;
+			y1 = y1_erase;
+		end else begin
+			pixel_color = 1'b1;
+			x0 = x0_draw;
+			x1 = x1_draw;
+			y0 = y0_draw;
+			y1 = y1_draw;
+		end
+	end
+	
+	always_comb begin
+		case (ps)
+			1'b0: if (clear) ns = 1'b1;
+					else ns = 1'b0;
+			1'b1: if (clear) ns = 1'b0;
+					else ns = 1'b1;
+		endcase
+	end
+	
+	logic [10:0] x0_temp, x1_temp, y0_temp, y1_temp;
+	
+	logic ps, ns;
+	
+	always_ff @(posedge clk[whichClock]) begin
+		ps <= ns;
+		if (~ps && erasing) begin
+			x0_draw = 20;
+			y0_draw = 250;
+			
+			x1_draw = 400;
+			y1_draw = 250;
+		end else if (~ps && ~erasing && drawn && x0_draw < 190) begin
+			//pixel_color <= 1'b1;
+			x0_draw <= x0_draw + 20;
+			y0_draw <= y0_draw - 20;
+			
+			x1_draw <= x1_draw - 20;
+			y1_draw <= y1_draw + 20;
+		end else if (!ps && ~erasing && drawn && x0_draw < 400) begin
+			//pixel_color <= 1'b1;
+			x0_draw <= x0_draw + 20;
+			y0_draw <= y0_draw + 20;
+			
+			x1_draw <= x1_draw - 20;
+			y1_draw <= y1_draw - 20;
+		end 
+	end
+	
+endmodule

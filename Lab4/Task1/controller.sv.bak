@@ -1,0 +1,4 @@
+module controller(input logic s);
+	enum logic [1:0] {S1=2'b00, S2=2'b01, S3=2'b10} ps, ns;
+	
+	

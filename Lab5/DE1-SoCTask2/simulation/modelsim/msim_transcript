@@ -1,0 +1,172 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do part1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/part1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:31 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/part1.v 
+# -- Compiling module part1
+# 
+# Top level modules:
+# 	part1
+# End time: 18:11:31 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/clock_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:31 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/clock_generator.v 
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# End time: 18:11:31 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/audio_and_video_config.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:31 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/audio_and_video_config.v 
+# -- Compiling module audio_and_video_config
+# 
+# Top level modules:
+# 	audio_and_video_config
+# End time: 18:11:32 on Mar 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_slow_clock_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:32 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_slow_clock_generator.v 
+# -- Compiling module Altera_UP_Slow_Clock_Generator
+# 
+# Top level modules:
+# 	Altera_UP_Slow_Clock_Generator
+# End time: 18:11:32 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_i2c_av_auto_initialize.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:33 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_i2c_av_auto_initialize.v 
+# -- Compiling module Altera_UP_I2C_AV_Auto_Initialize
+# 
+# Top level modules:
+# 	Altera_UP_I2C_AV_Auto_Initialize
+# End time: 18:11:33 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_i2c.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:33 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_i2c.v 
+# -- Compiling module Altera_UP_I2C
+# 
+# Top level modules:
+# 	Altera_UP_I2C
+# End time: 18:11:35 on Mar 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/audio_codec.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:35 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/audio_codec.v 
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# End time: 18:11:36 on Mar 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_clock_edge.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:36 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_clock_edge.v 
+# -- Compiling module Altera_UP_Clock_Edge
+# 
+# Top level modules:
+# 	Altera_UP_Clock_Edge
+# End time: 18:11:36 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_audio_in_deserializer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:36 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_audio_in_deserializer.v 
+# -- Compiling module Altera_UP_Audio_In_Deserializer
+# 
+# Top level modules:
+# 	Altera_UP_Audio_In_Deserializer
+# End time: 18:11:36 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_audio_bit_counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:36 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_audio_bit_counter.v 
+# -- Compiling module Altera_UP_Audio_Bit_Counter
+# 
+# Top level modules:
+# 	Altera_UP_Audio_Bit_Counter
+# End time: 18:11:37 on Mar 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_sync_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:37 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_sync_fifo.v 
+# -- Compiling module Altera_UP_SYNC_FIFO
+# 
+# Top level modules:
+# 	Altera_UP_SYNC_FIFO
+# End time: 18:11:37 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_audio_out_serializer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:37 on Mar 01,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/altera_up_audio_out_serializer.v 
+# -- Compiling module Altera_UP_Audio_Out_Serializer
+# 
+# Top level modules:
+# 	Altera_UP_Audio_Out_Serializer
+# End time: 18:11:38 on Mar 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/DFF.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:38 on Mar 01,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/DFF.sv 
+# -- Compiling module DFFF
+# -- Compiling module DFFF_testbench
+# 
+# Top level modules:
+# 	DFFF_testbench
+# End time: 18:11:38 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Student\ User/Downloads/DE1-SoCTask2 {C:/Users/Student User/Downloads/DE1-SoCTask2/FIR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:38 on Mar 01,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Student User/Downloads/DE1-SoCTask2" C:/Users/Student User/Downloads/DE1-SoCTask2/FIR.sv 
+# -- Compiling module FIR
+# -- Compiling module FIR_tb
+# 
+# Top level modules:
+# 	FIR_tb
+# End time: 18:11:38 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DFFF_testbench
+# vsim work.DFFF_testbench 
+# Start time: 18:11:59 on Mar 01,2019
+# Loading sv_std.std
+# Loading work.DFFF_testbench
+# Loading work.DFFF
+add wave -position end  sim:/DFFF_testbench/CLOCK_PERIOD
+add wave -position end  sim:/DFFF_testbench/clk
+add wave -position end  sim:/DFFF_testbench/reset
+add wave -position end  sim:/DFFF_testbench/D
+add wave -position end  sim:/DFFF_testbench/Q
+run -all
+# ** Note: $stop    : C:/Users/Student User/Downloads/DE1-SoCTask2/DFF.sv(49)
+#    Time: 1550 ps  Iteration: 1  Instance: /DFFF_testbench
+# Break in Module DFFF_testbench at C:/Users/Student User/Downloads/DE1-SoCTask2/DFF.sv line 49
+# End time: 18:13:18 on Mar 01,2019, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
